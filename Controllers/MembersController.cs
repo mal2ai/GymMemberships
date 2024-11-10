@@ -133,37 +133,28 @@ namespace GymMemberships.Controllers
             return View(member);
         }
 
-        // GET: Members/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // Renders the Delete confirmation view
+        public IActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var member = await _context.Members
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var member = _context.Members.Find(id);
             if (member == null)
             {
                 return NotFound();
             }
-
-            return View(member);
+            return PartialView(member);
         }
 
-        // POST: Members/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        // Handles the actual delete action
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
         {
-            var member = await _context.Members.FindAsync(id);
+            var member = _context.Members.Find(id);
             if (member != null)
             {
                 _context.Members.Remove(member);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
         //API Postman Method only 

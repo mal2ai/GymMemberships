@@ -4,48 +4,126 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<!-- Content -->
 
-<div>
-    <h4>Member</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Age)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Age)
-        </dd>
-        <!-- Custom label for MembershipPlanId -->
-        <dt class="col-sm-2">
-            Membership Plan Name
-        </dt>
-        <dd class="col-sm-10">
-            @ViewData["MembershipPlanName"] <!-- Display the PlanName -->
-        </dd>
-    </dl>
+<div class="container-xxl flex-grow-1 container-p-y">
+    <!-- Basic Layout & Basic with Icons -->
+    <div class="row">
+
+        <!-- Basic with Icons -->
+        <div class="col-xxl">
+            <div class="card mb-6">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">Membership's Detail'</h5>
+                    <small class="text-muted float-end">Merged input group</small>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <!-- Name -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-fullname2" class="input-group-text">
+                                        <i class="bx bx-user"></i>
+                                    </span>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="basic-icon-default-fullname"
+                                           value="@Html.DisplayFor(model => model.Name)"
+                                           placeholder="John Doe"
+                                           aria-label="John Doe"
+                                           aria-describedby="basic-icon-default-fullname2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                    <input type="text"
+                                           id="basic-icon-default-email"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.Email)"
+                                           placeholder="john.doe@example.com"
+                                           aria-label="john.doe"
+                                           aria-describedby="basic-icon-default-email2" readonly />
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-phone">Phone No</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-phone2" class="input-group-text">
+                                        <i class="bx bx-phone"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-phone"
+                                           class="form-control phone-mask"
+                                           value="@Html.DisplayFor(model => model.Phone)"
+                                           placeholder="658 799 8941"
+                                           aria-label="658 799 8941"
+                                           aria-describedby="basic-icon-default-phone2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Age -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-age">Age</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-age2" class="input-group-text">
+                                        <i class="bx bx-calendar"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-age"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.Age)"
+                                           placeholder="25"
+                                           aria-label="25"
+                                           aria-describedby="basic-icon-default-age2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Membership Plan -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-membership">Membership Plan</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-membership2" class="input-group-text">
+                                        <i class="bx bx-credit-card"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-membership"
+                                           class="form-control"
+                                           value="@ViewData["MembershipPlanName"]"
+                                           placeholder="Premium Plan"
+                                           aria-label="Premium Plan"
+                                           aria-describedby="basic-icon-default-membership2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<!-- / Content -->

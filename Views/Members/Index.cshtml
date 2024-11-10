@@ -4,56 +4,88 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container-xxl flex-grow-1 container-p-y">
+<!-- Hoverable Table rows -->
+<div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Memberships Details</h5>
+            <a asp-action="Create">
+                <button type="button" class="btn btn-primary">Create</button>
+            </a>
+        </div>
+    <div class="table-responsive text-nowrap">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Membership Plan</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                @foreach (var item in Model)
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MembershipPlanId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MembershipPlanId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+                {
+                    <tr>
+                        <td><span>@Html.DisplayFor(modelItem => item.Name)</span></td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td><span>@Html.DisplayFor(modelItem => item.Phone)</span></td>
+                        <td><span>@Html.DisplayFor(modelItem => item.MembershipPlanId)</span></td>
+                        <td>
+                                <div>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">
+                                        <button type="button" class="btn btn-primary">
+                                            Edit
+                                        </button>
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.Id">
+                                        <button type="button" class="btn btn-secondary">
+                                            Details
+                                        </button>
+                                    </a>
+                                    <button type="button" class="btn btn-danger" onclick="showDeleteModal(@item.Id)">
+                                        Delete
+                                    </button>
+                                </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Delete</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- This content will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+<!--/ Hoverable Table rows -->
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        function showDeleteModal(memberId) {
+            // Use AJAX to fetch the delete confirmation view
+            $.get('@Url.Action("Delete", "Members")', { id: memberId }, function(data) {
+                // Load the fetched content into the modal body
+                $('#deleteConfirmationModal .modal-body').html(data);
+                // Show the modal
+                $('#deleteConfirmationModal').modal('show');
+            });
+        }
+    </script>
 }
-    </tbody>
-</table>
