@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace GymMemberships.Controllers
 {
-    [Authorize]
+    
     public class MembersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -165,6 +165,111 @@ namespace GymMemberships.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        //API Postman Method only 
+
+        // GET: api/Members
+        [HttpGet("api/members")]
+        [AllowAnonymous] // Optional: Allows unauthenticated access to this endpoint
+        public async Task<IActionResult> GetAllMembers()
+        {
+            var members = await _context.Members
+                .Select(member => new
+                {
+                    member.Id,
+                    member.Name,
+                    member.Email,
+                    member.Phone,
+                    member.Age,
+                    MembershipPlanName = _context.MembershipPlans
+                        .Where(mp => mp.Id == member.MembershipPlanId)
+                        .Select(mp => mp.PlanName)
+                        .FirstOrDefault()
+                })
+                .ToListAsync();
+
+            return Ok(members);
+        }
+
+        // POST: api/members
+        [HttpPost("api/members")]
+        public async Task<IActionResult> CreateMember([FromBody] Member member)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            _context.Members.Add(member);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetMemberById), new { id = member.Id }, member);
+        }
+
+        // PUT: api/members/{id}
+        [HttpPut("api/members/{id}")]
+        public async Task<IActionResult> UpdateMember(int id, [FromBody] Member member)
+        {
+            if (id != member.Id)
+            {
+                return BadRequest("ID mismatch");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            _context.Entry(member).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!MemberExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/members/{id}
+        [HttpDelete("api/members/{id}")]
+        public async Task<IActionResult> DeleteMember(int id)
+        {
+            var member = await _context.Members.FindAsync(id);
+            if (member == null)
+            {
+                return NotFound();
+            }
+
+            _context.Members.Remove(member);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        // GET: api/members/{id}
+        [HttpGet("api/members/{id}")]
+        public async Task<IActionResult> GetMemberById(int id)
+        {
+            var member = await _context.Members.FindAsync(id);
+            if (member == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(member);
+        }
+
 
         private bool MemberExists(int id)
         {
