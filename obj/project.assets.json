@@ -8161,19 +8161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\GymMemberships.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\GymMemberships\\GymMemberships.csproj",
       "projectName": "GymMemberships",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\GymMemberships.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\obj\\",
+      "projectPath": "C:\\Users\\User\\source\\repos\\GymMemberships\\GymMemberships.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\GymMemberships\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
