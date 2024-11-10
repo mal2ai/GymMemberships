@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace GymMemberships.Controllers
 {
-    [Authorize]
     public class MembershipPlansController : Controller
     {
         private readonly ApplicationDbContext _context;

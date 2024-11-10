@@ -1,8 +1,383 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" type="text/css">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome ALLLLLLLLIM</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <style>
+
+        /* Custom styles */
+        .hero-section {
+            position: relative;
+            height: 100vh; /* Full screen height */
+            width: 100%; /* Full screen width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Places video behind content */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1; /* Ensures text is on top of the video */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .hero-section .btn {
+            margin-top: 20px;
+        }
+
+        .why-choose-us {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+            .feature-box i {
+                font-size: 3rem;
+                color: #007bff;
+                margin-bottom: 20px;
+            }
+
+        .cta-section {
+            background-color: black;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+
+        .testimonial-section {
+            padding: 60px 0;
+            background-color: #f1f1f1;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+        }
+
+            .testimonial img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 45px;
+                object-fit: cover; /* This ensures the image is cropped to fit within the circle */
+            }
+
+
+        .banner-with-features {
+            width: 100%;
+        }
+
+        .banner-content {
+            color: white;
+            margin-bottom: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            gap: 0; /* Remove space between rows */
+        }
+
+        .feature-box {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full-screen height for each feature row */
+            overflow: hidden;
+            margin: 0; /* Ensure no margin around the feature box */
+        }
+
+        .feature-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+            .feature-overlay h5 {
+                font-size: 2.5rem; /* Larger font size */
+                font-weight: bold; /* Bold text */
+                margin-bottom: 15px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for clarity */
+            }
+
+            .feature-overlay p {
+                font-size: 1.25rem; /* Increase paragraph font size */
+                line-height: 1.5;
+                max-width: 80%; /* Restrict width for readability */
+                margin: 0 auto;
+            }
+
+
+
+        #membership h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #membership .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #membership .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        #membership .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .btn-primary {
+            font-size: 1.1rem;
+            padding: 0.5rem 2rem;
+        }
+
+        .map-section {
+            padding: 40px 0;
+        }
+
+        .map-container {
+            width: 100%; 
+            height: 450px; 
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .card {
+            background-color: #000;
+            color: #fff; 
+            border: none; 
+        }
+
+            .card .card-title, .card .card-text {
+                color: #fff; 
+            }
+
+        .card-body {
+            padding: 20px; 
+        }
+
+
+    </style>
+</head>
+
+<span class="loader"></span>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="~/css/Video-banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content Overlay -->
+        <div class="hero-content">
+            <h1>Welcome to Our Gym!</h1>
+            <p>Your fitness journey starts here. Become the best version of yourself.</p>
+            <a href="#membership" class="btn btn-light">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Banner Section with Features on Top -->
+    <section class="banner-with-features">
+        <div class="banner-content text-center">
+            <h2 style="color:black; padding: 50px;">Why You Should Buy a Membership with Us</h2>
+
+
+            <!-- Feature 1 -->
+            <div class="feature-box">
+                <img src="~/css/banner-2.jpg" alt="Top-Notch Equipment" class="feature-img">
+                <div class="feature-overlay">
+                    <h5>Top-Notch Equipment</h5>
+                    <p>We provide the latest and most effective gym equipment to help you reach your goals faster.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-box">
+                <img src="~/css/banner-3.jpg" alt="Flexible Schedules" class="feature-img">
+                <div class="feature-overlay">
+                    <h5>Flexible Schedules</h5>
+                    <p>Our gym is open 24/7, allowing you to work out whenever it fits your busy schedule.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-box">
+                <img src="~/css/banner-4.jpg" alt="Personalized Training" class="feature-img">
+                <div class="feature-overlay">
+                    <h5>Personalized Training</h5>
+                    <p>Our certified trainers will tailor workouts to meet your specific needs and goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Our Gym Provides Section -->
+    <section class="text-center py-5" id="membership">
+        <h2>What Our Gym Provides</h2>
+        <p class="mb-5">Joining our gym offers you a wide range of benefits and services to help you on your fitness journey:</p>
+
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Access to Premium Gym Equipment</h5>
+                            <p style="color:#eeeeee" class="card-text">Top-tier machines and tools to enhance your workout experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Personalized Fitness Programs</h5>
+                            <p style="color:#eeeeee" class="card-text">Customized plans tailored to your individual fitness goals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga and Group Classes</h5>
+                            <p style="color:#eeeeee" class="card-text">Join engaging yoga and fitness classes led by professionals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">24/7 Gym Access</h5>
+                            <p style="color:#eeeeee" class="card-text">Work out at any time that suits your schedule with 24/7 access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Wi-Fi and Refreshments</h5>
+                            <p style="color:#eeeeee" class="card-text">Enjoy complimentary Wi-Fi and refreshing drinks during your visit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Nutrition Advice</h5>
+                            <p style="color:#eeeeee" class="card-text">Guidance from professionals to complement your fitness journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Body?</h2>
+        <p>Join our gym and take the first step towards a healthier, stronger you!</p>
+        <a href="#membership" class="btn btn-light">Get Started Today</a>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="map-section">
+        <h3 class="text-center" style="padding-bottom: 25px;">Find Us Here</h3>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60635273.52452367!2d-23.03096443938511!3d21.939033777573858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a38de62cab6d%3A0x45f1d780a0d3517b!2sEQUINOX%20TRAINING!5e0!3m2!1sen!2smy!4v1731252351603!5m2!1sen!2smy"
+                    style="border:0; width: 100%; height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2 class="text-center">What Our Members Say</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial">
+                    <img src="~/css/member-1.jpg" alt="Member 1">
+                    <p>"The trainers here are amazing! I’ve seen incredible results and feel more motivated than ever."</p>
+                    <h5>- Sarah</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial">
+                    <img src="~/css/member-2.jpg" alt="Member 2">
+                    <p>"I love the flexible hours. I can always find time to work out, no matter my schedule."</p>
+                    <h5>- James</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial">
+                    <img src="~/css/member-3.jpg" alt="Member 3">
+                    <p>"This gym has everything I need, from the equipment to the community. It's the perfect place to train!"</p>
+                    <h5>- John</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

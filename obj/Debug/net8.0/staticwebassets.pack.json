@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\GymMemberships.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\Video-banner.mp4",
+      "PackagePath": "staticwebassets\\css\\Video-banner.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\css\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\css\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\css\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\banner-4.jpg",
+      "PackagePath": "staticwebassets\\css\\banner-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\member-1.jpg",
+      "PackagePath": "staticwebassets\\css\\member-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\member-2.jpg",
+      "PackagePath": "staticwebassets\\css\\member-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\member-3.jpg",
+      "PackagePath": "staticwebassets\\css\\member-3.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Source\\Repos\\GymMemberships\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
