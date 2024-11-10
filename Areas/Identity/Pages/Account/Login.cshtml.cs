@@ -115,7 +115,9 @@ namespace GymMemberships.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+
+                    // Redirect to the 'Index' action in the 'Members' controller
+                    return RedirectToAction("Index", "Members");
                 }
                 if (result.RequiresTwoFactor)
                 {

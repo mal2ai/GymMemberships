@@ -469,6 +469,14 @@
       "PackagePath": "staticwebassets\\fonts\\boxicons.scss"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.js"
     },
