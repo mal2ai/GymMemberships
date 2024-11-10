@@ -11,7 +11,5 @@
         // Membership Plan ID (this is not a foreign key but will be used to store the selected plan ID)
         public int MembershipPlanId { get; set; }
 
-        // Navigation Property
-        public MembershipPlan MembershipPlan { get; set; }
     }
 }

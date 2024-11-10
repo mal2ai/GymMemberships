@@ -36,7 +36,6 @@ namespace GymMemberships.Controllers
             }
 
             var member = await _context.Members
-                .Include(m => m.MembershipPlan)  // Include the related MembershipPlan data
                 .FirstOrDefaultAsync(m => m.Id == id);
 
             if (member == null)
@@ -44,8 +43,16 @@ namespace GymMemberships.Controllers
                 return NotFound();
             }
 
+            // Get the MembershipPlan by MembershipPlanId
+            var membershipPlan = await _context.MembershipPlans
+                .FirstOrDefaultAsync(mp => mp.Id == member.MembershipPlanId);
+
+            // Pass the PlanName to the view
+            ViewData["MembershipPlanName"] = membershipPlan?.PlanName;
+
             return View(member);
         }
+
 
         // GET: Member/Create
         public IActionResult Create()

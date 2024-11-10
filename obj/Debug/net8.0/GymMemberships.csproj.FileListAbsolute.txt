@@ -265,3 +265,4 @@ C:\Users\User\source\repos\GymMemberships\obj\Debug\net8.0\refint\GymMemberships
 C:\Users\User\source\repos\GymMemberships\obj\Debug\net8.0\GymMemberships.pdb
 C:\Users\User\source\repos\GymMemberships\obj\Debug\net8.0\GymMemberships.genruntimeconfig.cache
 C:\Users\User\source\repos\GymMemberships\obj\Debug\net8.0\ref\GymMemberships.dll
+C:\Users\User\source\repos\GymMemberships\obj\Debug\net8.0\GymMemberships.sourcelink.json
