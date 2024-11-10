@@ -118,37 +118,28 @@ namespace GymMemberships.Controllers
             return View(membershipPlan);
         }
 
-        // GET: MembershipPlans/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // Displays the delete confirmation modal
+        public IActionResult Delete(int id)
         {
-            if (id == null)
+            var plan = _context.MembershipPlans.Find(id);
+            if (plan == null)
             {
                 return NotFound();
             }
-
-            var membershipPlan = await _context.MembershipPlans
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (membershipPlan == null)
-            {
-                return NotFound();
-            }
-
-            return View(membershipPlan);
+            return PartialView(plan);
         }
 
-        // POST: MembershipPlans/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        // Handles the actual delete action
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
         {
-            var membershipPlan = await _context.MembershipPlans.FindAsync(id);
-            if (membershipPlan != null)
+            var plan = _context.MembershipPlans.Find(id);
+            if (plan != null)
             {
-                _context.MembershipPlans.Remove(membershipPlan);
+                _context.MembershipPlans.Remove(plan);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
         private bool MembershipPlanExists(int id)

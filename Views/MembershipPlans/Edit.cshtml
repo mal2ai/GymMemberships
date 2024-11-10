@@ -4,40 +4,43 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<!-- Content -->
 
-<h4>MembershipPlan</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="PlanName" class="control-label"></label>
-                <input asp-for="PlanName" class="form-control" />
-                <span asp-validation-for="PlanName" class="text-danger"></span>
+<div class="container-xxl flex-grow-1 container-p-y d-flex justify-content-center">
+    <div class="row g-6 w-100" style="max-width: 900px;">
+        <!-- Form controls -->
+        <div class="col-md-12">
+            <div class="card">
+                <h5 class="card-header">Update Membership Plan</h5>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <form asp-action="Edit">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <label asp-for="PlanName" class="form-label">Membership Plan Name</label>
+                            <input asp-for="PlanName" placeholder="insert plan name" class="form-control" />
+                            <span asp-validation-for="PlanName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">Price</label>
+                            <input asp-for="Price" placeholder="RMx.xx" class="form-control" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">Description</label>
+                            <input asp-for="Description" placeholder="description of the plan" class="form-control" />
+                        </div>
+
+                        <div class="form-group text-end">
+                            <a asp-action="Index" class="btn btn-secondary">Back</a>
+                            <input type="submit" value="Update" class="btn btn-primary" />
+                        </div>
+
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<!-- / Content -->
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
