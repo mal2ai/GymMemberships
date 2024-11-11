@@ -17,87 +17,87 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GymMemberships
 build_property.RootNamespace = GymMemberships
-build_property.ProjectDir = C:\Users\Admin\Source\Repos\GymMemberships\
+build_property.ProjectDir = C:\Users\user\source\repos\GymMemberships\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Source\Repos\GymMemberships
+build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\GymMemberships
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Home/Index.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Home/Privacy.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/MembershipPlans/Create.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/MembershipPlans/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFBsYW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/MembershipPlans/Delete.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/MembershipPlans/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFBsYW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/MembershipPlans/Details.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/MembershipPlans/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFBsYW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/MembershipPlans/Edit.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/MembershipPlans/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFBsYW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/MembershipPlans/Index.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/MembershipPlans/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFBsYW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Members/Create.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Members/Delete.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Members/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Members/Details.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Members/Edit.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Members/Index.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Shared/Error.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/_ViewImports.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/_ViewStart.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Source/Repos/GymMemberships/Views/Shared/_Layout.cshtml]
+[C:/Users/user/source/repos/GymMemberships/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-apuezs9f68
