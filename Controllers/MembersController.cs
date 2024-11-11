@@ -39,6 +39,25 @@ namespace GymMemberships.Controllers
             return View(members);
         }
 
+        //print report
+        public async Task<IActionResult> Report()
+        {
+            var members = await _context.Members.ToListAsync();
+
+            // Retrieve and store the MembershipPlanName for each member in ViewData
+            foreach (var member in members)
+            {
+                var membershipPlan = await _context.MembershipPlans
+                    .FirstOrDefaultAsync(mp => mp.Id == member.MembershipPlanId);
+
+                // Use the member's Id as the key to store the plan name in ViewData
+                ViewData[$"MembershipPlanName_{member.Id}"] = membershipPlan?.PlanName;
+            }
+
+            return View(members);
+        }
+
+
         // GET: Members/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -9,9 +9,12 @@
 <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Memberships Details</h5>
-            <a asp-action="Create">
-                <button type="button" class="btn btn-primary">Create</button>
-            </a>
+            <div class="ml-auto">
+                <a asp-action="Create">
+                    <button type="button" class="btn btn-primary">Create</button>
+                </a>
+                <button class="btn btn-success" onclick="openPrintPage()">Print</button>
+            </div>
         </div>
     <div class="table-responsive text-nowrap">
         <table class="table table-hover">
@@ -102,6 +105,11 @@
                 // Show the modal
                 $('#deleteConfirmationModal').modal('show');
             });
+        }
+    </script>
+    <script>
+        function openPrintPage() {
+            window.open('@Url.Action("Report", "Members")', '_blank');
         }
     </script>
 }

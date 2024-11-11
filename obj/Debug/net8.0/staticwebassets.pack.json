@@ -313,6 +313,10 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\popper\\popper.js"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\report.css",
+      "PackagePath": "staticwebassets\\css\\report.css"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

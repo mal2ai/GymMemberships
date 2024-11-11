@@ -4,6 +4,8 @@
 @{
 }
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
@@ -33,7 +35,7 @@
 
                         <!-- Card for explaining FlexFit -->
                         <div class="card mb-4 transparent-card">
-                            <div class="card-body">
+                            <div class="card-body" style="padding-left: 20rem;padding-right: 20rem;">
                                 <!-- Content with left and right padding -->
                                 <div class="d-flex justify-content-center align-items-center p-4">
                                     <!-- Left: FlexFit Logo -->
@@ -97,6 +99,7 @@
                             </div>
                         </div>
 
+                        <!-- contact us -->
                         <div class="card mb-4 transparent-card" style="height: auto;">
                             <div class="card-body" style="padding: 30px;">
                                 <h4 class="card-text text-white text-center mb-4" style="font-size: 1.8rem; font-weight: 600;">Contact Us</h4>
@@ -110,30 +113,55 @@
                                 <!-- Horizontal Line -->
                                 <hr style="border-color: #fff; border-width: 1px; margin-bottom: 30px; width: 20%; margin-left: auto; margin-right: auto;" />
 
-                                <!-- New Section for Table Layout -->
-                                <div class="table-section" style="padding-left: 20rem; padding-right: 20rem;">
-                                    <table class="table text-white" style="border: none; width: 100%; table-layout: auto; margin-left: auto; margin-right: auto;">
-                                        <tr>
-                                            <td class="font-weight-bold" style="padding-right: 15px; width: 30%;">Our Address</td>
-                                            <td>Flex Fit Gym, 9732+4R7, Main Blvd, Block M 4, Lake City, Lahore, Punjab, Pakistan</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-bold" style="padding-right: 15px;">Phone Number</td>
-                                            <td>+92 123 456 7890</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-bold" style="padding-right: 15px;">Email Us</td>
-                                            <td>contact@flexfit.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="font-weight-bold" style="padding-right: 15px;">Follow Us</td>
-                                            <td>
-                                                <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a> |
-                                                <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a> |
-                                                <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <!-- Section with 4 cards, 2 above and 2 below -->
+                                <div class="row">
+                                    <!-- Address Card -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card text-white bg-dark">
+                                            <div class="card-body d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-map-marker-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                                                <span>Flex Fit Gym, 9732+4R7,<br />
+                                                    Main Blvd, Block M 4, Lake City, <br />
+                                                    Lahore, Punjab, Pakistan</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone Card -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card text-white bg-dark">
+                                            <div class="card-body d-flex align-items-center">
+                                                <i class="fas fa-phone-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                                                <span>+92 123 456 7890</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Email Card -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card text-white bg-dark">
+                                            <div class="card-body d-flex align-items-center">
+                                                <i class="fas fa-envelope" style="font-size: 2rem; margin-right: 10px;"></i>
+                                                <span>contact@flexfit.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Social Media Card -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card text-white bg-dark">
+                                            <div class="card-body d-flex align-items-center">
+                                                <i class="fas fa-share-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                                                <span>
+                                                    <a href="https://facebook.com" target="_blank" class="social-link text-white">Facebook</a> |
+                                                    <a href="https://twitter.com" target="_blank" class="social-link text-white">Twitter</a> |
+                                                    <a href="https://instagram.com" target="_blank" class="social-link text-white">Instagram</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -211,12 +239,6 @@
             z-index: 10;
         }
 
-        /* Add padding on left and right of the card body content */
-        .card-body {
-            padding-left: 20rem;
-            padding-right: 20rem;
-        }
-
         /* Add padding to the flex container */
         .d-flex {
             display: flex;
@@ -237,19 +259,5 @@
             height: auto; /* Ensure aspect ratio is maintained */
         }
 
-        /* Title and description adjustments */
-        .flex-description {
-            text-align: left; /* Align text to the left */
-        }
-
-        .social-link {
-            color: gray;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-            .social-link:hover {
-                color: white;
-            }
     </style>
 </body>

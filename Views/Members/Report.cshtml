@@ -1,0 +1,124 @@
+﻿@model IEnumerable<Member>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Report</title>
+    <link rel="stylesheet" href="~/css/report.css" />
+    <style>
+        /* Basic styling for print layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 100px; /* Set the width to a smaller value */
+            height: auto; /* Keep the aspect ratio intact */
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+            .contact-info p {
+                margin: 2px 0;
+            }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Header Section with Logo and Contact Info -->
+    <div class="header">
+        <img src="/img/logo.png" alt="Gym Logo" class="logo" />
+        <div class="contact-info">
+            <h3><span style="font-style:italic">FlexFit</span> Gym</h3>
+            <p>Main Blvd, Block M 4, Lake City</p>
+            <p>Lahore, Punjab, Pakistan</p>
+            <p>Phone: +92 123 456 7890</p>
+            <p>Email: contact@flexfit.com</p>
+        </div>
+    </div>
+
+    <!-- Report Title -->
+    <h2>Memberships Report</h2>
+
+    <!-- Member Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Age</th>
+                <th>Membership Plan</th>
+                <th>Address</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var member in Model)
+            {
+                <tr>
+                    <td>@member.Id</td>
+                    <td>@member.Name</td>
+                    <td>@member.Email</td>
+                    <td>@member.Phone</td>
+                    <td>@member.Age</td>
+                    <td>@ViewData[$"MembershipPlanName_{member.Id}"]</td>
+                    <td>@member.Address</td>
+                    <td>@member.StartDate.ToString("yyyy-MM-dd")</td>
+                    <td>@member.EndDate.ToString("yyyy-MM-dd")</td>
+                    <td>@member.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>
+
