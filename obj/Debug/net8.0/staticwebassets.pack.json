@@ -469,6 +469,34 @@
       "PackagePath": "staticwebassets\\fonts\\boxicons.scss"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\1.png",
+      "PackagePath": "staticwebassets\\img\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\3.jpeg",
+      "PackagePath": "staticwebassets\\img\\3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\background.mp4",
+      "PackagePath": "staticwebassets\\img\\background.mp4"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

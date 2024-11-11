@@ -1,0 +1,58 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<!-- Video Background -->
+<video autoplay muted loop id="background-video">
+    <source src="/img/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="container-xxl flex-grow-1 container-p-y" style="position: relative; height: 100vh; overflow: hidden;">
+    
+
+    <!-- Card Content -->
+    <div class="card mb-4 transparent-card" style="max-width: 800px; margin: 30px auto; border-radius: 10px; background-color: rgba(0, 0, 0, 0.6); z-index: 2;">
+        <div class="card-body" style="padding: 30px;">
+            <h4 class="card-text text-white text-center mb-4" style="font-size: 1.8rem; font-weight: 600;">@ViewData["Title"]</h4>
+
+            <!-- Display Confirmation Message -->
+            @if (Model.DisplayConfirmAccountLink)
+            {
+                <p>
+                    This app does not currently have a real email sender registered, see <a href="https://aka.ms/aspaccountconf" class="text-white">these docs</a> for how to configure a real email sender. Normally this would be emailed:
+                    <a id="confirm-link" href="@Model.EmailConfirmationUrl" class="text-white">Click here to confirm your account</a>
+                </p>
+            }
+            else
+            {
+                <p>
+                    Please check your email to confirm your account.
+                </p>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Fullscreen video background */
+    #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Make card transparent */
+    .transparent-card {
+        background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency as needed */
+        border: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow to make card stand out */
+    }
+</style>
+

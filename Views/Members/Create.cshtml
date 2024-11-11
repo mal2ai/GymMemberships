@@ -15,23 +15,31 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <form asp-action="Create">
                     <div class="card-body">
+                        <!-- FullName -->
                         <div class="mb-4">
-                            <label for="exampleFormControlInput1" class="form-label">FullName</label>
-                            <input asp-for="Name" placeholder="your full name" class="form-control" />
+                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                            <input asp-for="Name" placeholder="Your full name" class="form-control" />
                         </div>
+
+                        <!-- Email Address -->
                         <div class="mb-4">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
                             <input asp-for="Email" placeholder="name@example.com" class="form-control" />
                         </div>
+
+                        <!-- Phone Number -->
                         <div class="mb-4">
                             <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
                             <input asp-for="Phone" placeholder="012xxxxxxx" class="form-control" />
                         </div>
+
+                        <!-- Age -->
                         <div class="mb-4">
                             <label for="exampleFormControlInput1" class="form-label">Age</label>
-                            <input asp-for="Age" placeholder="012xxxxxxx" class="form-control" />
+                            <input asp-for="Age" placeholder="Age" class="form-control" />
                         </div>
-                        
+
+                        <!-- Membership Plan -->
                         <div class="mb-4">
                             <label for="exampleFormControlSelect1" class="form-label">Membership Plan</label>
                             <select class="form-select" asp-for="MembershipPlanId" asp-items="@(ViewData["MembershipPlanId"] as SelectList)">
@@ -39,12 +47,42 @@
                             </select>
                             <span asp-validation-for="MembershipPlanId" class="text-danger"></span>
                         </div>
-                        
+
+                        <!-- Address -->
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">Address</label>
+                            <input asp-for="Address" placeholder="Enter your address" class="form-control" />
+                        </div>
+
+                        <!-- Start Date -->
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">Start Date</label>
+                            <input asp-for="StartDate" type="datetime-local" class="form-control" />
+                        </div>
+
+                        <!-- End Date -->
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">End Date</label>
+                            <input asp-for="EndDate" type="datetime-local" class="form-control" />
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-4">
+                            <label for="Status" class="form-label">Status</label>
+                            <select asp-for="Status" class="form-select">
+                                <option value="">Please Select</option>
+                                <option value="Active">Active</option>
+                                <option value="Expired">Expired</option>
+                                <option value="Deactivated">Deactivated</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit and Back Buttons -->
                         <div class="form-group text-end">
                             <a asp-action="Index" class="btn btn-secondary">Back</a>
                             <input type="submit" value="Create" class="btn btn-primary" />
                         </div>
-                        
                     </div>
                 </form>
             </div>

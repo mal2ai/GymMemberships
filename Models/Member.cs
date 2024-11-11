@@ -8,8 +8,13 @@
         public string Phone { get; set; }
         public int Age { get; set; }
 
-        // Membership Plan ID (this is not a foreign key but will be used to store the selected plan ID)
+        // Membership Plan ID
         public int MembershipPlanId { get; set; }
 
+        // New attributes
+        public string Address { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public string Status { get; set; } 
     }
 }

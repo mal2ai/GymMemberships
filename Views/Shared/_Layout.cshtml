@@ -32,6 +32,24 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="/assets/js/config.js"></script>
+
+    <style>
+        /* Force navbar text color to white when it's transparent */
+        .navbar-light .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+            /* Change text color to gray on hover */
+            .navbar-light .navbar-nav .nav-link:hover {
+                color: gray !important;
+            }
+
+
+        /* Ensures the navbar has a transparent background when logged out */
+        .bg-transparent {
+            background-color: transparent !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Layout wrapper -->
@@ -60,16 +78,44 @@
 
                     <ul class="menu-inner py-1">
                         <li class="menu-item">
-                            <a asp-controller="Members" asp-action="Index" class="menu-link">
+                            <a href="javascript:void(0)" class="menu-link menu-toggle">
                                 <i class="menu-icon tf-icons bx bx-group"></i> <!-- Group icon for Members -->
-                                <div class="text-truncate" data-i18n="Boxicons">Members</div>
+                                <div class="text-truncate" data-i18n="Members">Members</div>
                             </a>
+                            <ul class="menu-sub">
+                                <!-- Index Member -->
+                                <li class="menu-item">
+                                    <a asp-controller="Members" asp-action="Index" class="menu-link">
+                                        <div class="text-truncate" data-i18n="Report">Report</div>
+                                    </a>
+                                </li>
+                                <!-- Create Member -->
+                                <li class="menu-item">
+                                    <a asp-controller="Members" asp-action="Create" class="menu-link">
+                                        <div class="text-truncate" data-i18n="Create">Create</div>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu-item">
-                            <a asp-controller="MembershipPlans" asp-action="Index" class="menu-link">
+                            <a href="javascript:void(0)" class="menu-link menu-toggle">
                                 <i class="menu-icon tf-icons bx bx-credit-card"></i> <!-- Credit card icon for Membership Plan -->
-                                <div class="text-truncate" data-i18n="Boxicons">Membership Plan</div>
+                                <div class="text-truncate" data-i18n="Membership Plan">Membership Plan</div>
                             </a>
+                            <ul class="menu-sub">
+                                <!-- Index Membership Plan -->
+                                <li class="menu-item">
+                                    <a asp-controller="MembershipPlans" asp-action="Index" class="menu-link">
+                                        <div class="text-truncate" data-i18n="Report">Report</div>
+                                    </a>
+                                </li>
+                                <!-- Create Membership Plan -->
+                                <li class="menu-item">
+                                    <a asp-controller="MembershipPlans" asp-action="Create" class="menu-link">
+                                        <div class="text-truncate" data-i18n="Create">Create</div>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </aside>
@@ -79,7 +125,7 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center @(!User.Identity.IsAuthenticated ? "bg-transparent navbar-light text-white" : "bg-navbar-theme")"
                      id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
                         <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">

@@ -24,7 +24,19 @@ namespace GymMemberships.Controllers
         // GET: Members
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Members.ToListAsync());
+            var members = await _context.Members.ToListAsync();
+
+            foreach (var member in members)
+            {
+                // Fetch the MembershipPlan using MembershipPlanId
+                var membershipPlan = await _context.MembershipPlans
+                                                   .FirstOrDefaultAsync(mp => mp.Id == member.MembershipPlanId);
+
+                // Store the MembershipPlan name in ViewData with a key for each member
+                ViewData[$"MembershipPlanName_{member.Id}"] = membershipPlan?.PlanName ?? "N/A";
+            }
+
+            return View(members);
         }
 
         // GET: Members/Details/5
@@ -100,7 +112,7 @@ namespace GymMemberships.Controllers
         // POST: Member/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Phone,Age,MembershipPlanId")] Member member)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Phone,Age,MembershipPlanId,Address,StartDate,EndDate,Status")] Member member)
         {
             if (id != member.Id)
             {
@@ -111,6 +123,7 @@ namespace GymMemberships.Controllers
             {
                 try
                 {
+                    // Update the member details in the database
                     _context.Update(member);
                     await _context.SaveChangesAsync();
                 }
@@ -130,6 +143,9 @@ namespace GymMemberships.Controllers
 
             // Repopulate MembershipPlanId dropdown in case of validation failure
             ViewData["MembershipPlanId"] = new SelectList(_context.MembershipPlans, "Id", "PlanName", member.MembershipPlanId);
+
+            // You may want to handle the Status in the ViewData or another helper if you want to customize it more
+            // For example, you can manually populate the status options in ViewData if needed
             return View(member);
         }
 

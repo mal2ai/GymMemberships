@@ -59,7 +59,6 @@
                                            placeholder="john.doe@example.com"
                                            aria-label="john.doe"
                                            aria-describedby="basic-icon-default-email2" readonly />
-                                    
                                 </div>
                             </div>
                         </div>
@@ -121,6 +120,81 @@
                             </div>
                         </div>
 
+                        <!-- Address -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-address">Address</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-address2" class="input-group-text">
+                                        <i class="bx bx-home"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-address"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.Address)"
+                                           placeholder="1234 Main St, City, Country"
+                                           aria-label="Address"
+                                           aria-describedby="basic-icon-default-address2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start Date -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-startdate">Start Date</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-startdate2" class="input-group-text">
+                                        <i class="bx bx-calendar-event"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-startdate"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.StartDate)"
+                                           placeholder="01/01/2023"
+                                           aria-label="Start Date"
+                                           aria-describedby="basic-icon-default-startdate2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Date -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-enddate">End Date</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-enddate2" class="input-group-text">
+                                        <i class="bx bx-calendar-event"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-enddate"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.EndDate)"
+                                           placeholder="01/01/2024"
+                                           aria-label="End Date"
+                                           aria-describedby="basic-icon-default-enddate2" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Status -->
+                        <div class="row mb-6">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-status">Status</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-status2" class="input-group-text">
+                                        <i class="bx bx-check-circle"></i>
+                                    </span>
+                                    <input type="text"
+                                           id="basic-icon-default-status"
+                                           class="form-control"
+                                           value="@Html.DisplayFor(model => model.Status)"
+                                           placeholder="Active"
+                                           aria-label="Status"
+                                           aria-describedby="basic-icon-default-status2" readonly />
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
