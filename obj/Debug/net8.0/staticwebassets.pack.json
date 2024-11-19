@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\GymMemberships.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\Magnific-Popup-master.zip",
+      "PackagePath": "staticwebassets\\Source\\Magnific-Popup-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\OwlCarousel2-2.3.4.zip",
+      "PackagePath": "staticwebassets\\Source\\OwlCarousel2-2.3.4.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\SlickNav-master.zip",
+      "PackagePath": "staticwebassets\\Source\\SlickNav-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\barfiller-master.zip",
+      "PackagePath": "staticwebassets\\Source\\barfiller-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\bootstrap-4.2.1-dist.zip",
+      "PackagePath": "staticwebassets\\Source\\bootstrap-4.2.1-dist.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\flaticon.zip",
+      "PackagePath": "staticwebassets\\Source\\flaticon.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\font-awesome-4.7.0.zip",
+      "PackagePath": "staticwebassets\\Source\\font-awesome-4.7.0.zip"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\Source\\sass.zip",
+      "PackagePath": "staticwebassets\\Source\\sass.zip"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\assets\\css\\demo.css",
       "PackagePath": "staticwebassets\\assets\\css\\demo.css"
     },
@@ -313,12 +345,44 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\popper\\popper.js"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\barfiller.css",
+      "PackagePath": "staticwebassets\\css\\barfiller.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\report.css",
       "PackagePath": "staticwebassets\\css\\report.css"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\dist\\css\\core.css",
@@ -469,8 +533,52 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\boxicons.scss",
       "PackagePath": "staticwebassets\\fonts\\boxicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\1.png",
@@ -497,8 +605,168 @@
       "PackagePath": "staticwebassets\\img\\6.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\about-us.jpg",
+      "PackagePath": "staticwebassets\\img\\about-us.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\background.mp4",
       "PackagePath": "staticwebassets\\img\\background.mp4"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\blog-profile.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\blog-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\comment-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\comment-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\comment-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\comment-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\comment-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\comment-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\details-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\details-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\details-hero.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\details-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\blog\\details\\quote-left.png",
+      "PackagePath": "staticwebassets\\img\\blog\\details\\quote-left.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\breadcrumb-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\breadcrumb-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-1.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-2.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-3.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-4.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-5.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-details\\class-detailsl.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-details\\class-detailsl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\classes\\class-details\\trainer-profile.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\class-details\\trainer-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-7.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-8.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\gallery\\gallery-9.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\hero\\hero-1.jpg",
+      "PackagePath": "staticwebassets\\img\\hero\\hero-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\hero\\hero-2.jpg",
+      "PackagePath": "staticwebassets\\img\\hero\\hero-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\letest-blog\\latest-1.jpg",
+      "PackagePath": "staticwebassets\\img\\letest-blog\\latest-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\letest-blog\\latest-2.jpg",
+      "PackagePath": "staticwebassets\\img\\letest-blog\\latest-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\letest-blog\\latest-3.jpg",
+      "PackagePath": "staticwebassets\\img\\letest-blog\\latest-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\letest-blog\\latest-4.jpg",
+      "PackagePath": "staticwebassets\\img\\letest-blog\\latest-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\letest-blog\\latest-5.jpg",
+      "PackagePath": "staticwebassets\\img\\letest-blog\\latest-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\logo.ico",
+      "PackagePath": "staticwebassets\\img\\logo.ico"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\logo.png",
@@ -509,16 +777,100 @@
       "PackagePath": "staticwebassets\\img\\logo.svg"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\services\\services-1.jpg",
+      "PackagePath": "staticwebassets\\img\\services\\services-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\services\\services-2.jpg",
+      "PackagePath": "staticwebassets\\img\\services\\services-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\services\\services-3.jpg",
+      "PackagePath": "staticwebassets\\img\\services\\services-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\services\\services-4.jpg",
+      "PackagePath": "staticwebassets\\img\\services\\services-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\sidebar-banner.jpg",
+      "PackagePath": "staticwebassets\\img\\sidebar-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-1.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-2.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-3.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-4.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-5.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\team\\team-6.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\team-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\testimonial\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\img\\testimonial\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial\\testimonial-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\helpers.js",
       "PackagePath": "staticwebassets\\js\\helpers.js"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\jquery.barfiller.js",
+      "PackagePath": "staticwebassets\\js\\jquery.barfiller.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\masonry.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\masonry.pkgd.min.js"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\menu.js",
       "PackagePath": "staticwebassets\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\GymMemberships\\wwwroot\\js\\site.js",

@@ -18,8 +18,8 @@
             <div class="card px-sm-6 px-0 transparent-card">
                 <div class="card-body">
                     <!-- Logo -->
-                    <div class="app-brand justify-content-center">
-                        <a href="index.html" class="app-brand-link gap-2">
+                    <div class="app-brand justify-content-center text-center mb-4">
+                        <a href="index.html" class="app-brand-link gap-2 d-flex flex-column align-items-center">
                             <span class="app-brand-logo demo">
                                 <img src="/img/logo.png" alt="FlexFit Logo" width="70" />
                             </span>
@@ -28,7 +28,7 @@
                     </div>
                     <!-- /Logo -->
                     <br />
-                    <p class="mb-6" style="font-weight: bold;">Please sign-in to your account and start the adventure</p>
+                    <p class="mb-6" style="font-weight: bold;">For staff login purpose only</p>
 
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
@@ -72,6 +72,7 @@
         </div>
     </div>
 </div>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

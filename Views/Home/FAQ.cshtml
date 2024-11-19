@@ -4,6 +4,174 @@
 @{
 }
 
+<style>
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Ensures the video stays in the background */
+    }
+
+    #bg-video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .transparent-card {
+        background: rgba(0, 0, 0, 0.5); /* Transparent background */
+        color: white;
+        border: none;
+        position: relative;
+        z-index: 10;
+    }
+
+    img {
+        height: 600px;
+        width: 600px;
+        object-fit: cover;
+    }
+
+    /* Make the accordion background transparent */
+    .accordion-item {
+        background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a transparent border */
+    }
+
+    .accordion-body {
+        color: #d3d3d3; /* white text */
+        margin-top: 10px;
+    }
+
+    /* Make accordion header button background transparent */
+    .accordion-button {
+        background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity */
+        color: white; /* Text color */
+    }
+
+        /* Make accordion button when active transparent */
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity when active */
+            color: white; /* Text color */
+        }
+
+        /* Optional: You can also add hover effects */
+        .accordion-button:hover {
+            background-color: rgba(0, 0, 0, 0.3); /* Change on hover */
+        }
+
+    /*---------------------
+          Footer
+        -----------------------*/
+
+    .footer-section {
+        background: transparent;
+        padding-top: 50px;
+    }
+
+    .fs-about {
+        margin-bottom: 30px;
+    }
+
+        .fs-about .fa-logo {
+            margin-bottom: 30px;
+        }
+
+            .fs-about .fa-logo a {
+                display: inline-block;
+            }
+
+        .fs-about p {
+            line-height: 26px;
+            color: #c4c4c4;
+        }
+
+        .fs-about .fa-social a {
+            font-size: 14px;
+            color: #c4c4c4;
+            margin-right: 10px;
+        }
+
+            .fs-about .fa-social a:last-child {
+                margin-right: 0;
+            }
+
+    .fs-widget {
+        margin-bottom: 30px;
+    }
+
+        .fs-widget h4 {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .fs-widget ul li {
+            list-style: none;
+        }
+
+            .fs-widget ul li a {
+                font-size: 14px;
+                color: #c4c4c4;
+                line-height: 30px;
+            }
+
+        .fs-widget .fw-recent {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+            .fs-widget .fw-recent:last-child {
+                padding-bottom: 0;
+                border: none;
+            }
+
+            .fs-widget .fw-recent h6 {
+                margin-bottom: 6px;
+            }
+
+                .fs-widget .fw-recent h6 a {
+                    color: #c4c4c4;
+                    letter-spacing: 0.5px;
+                }
+
+            .fs-widget .fw-recent ul li {
+                font-size: 12px;
+                color: #4d4d4d;
+                display: inline-block;
+                margin-right: 25px;
+                position: relative;
+            }
+
+                .fs-widget .fw-recent ul li:last-child:after {
+                    display: none;
+                }
+
+                .fs-widget .fw-recent ul li:after {
+                    position: absolute;
+                    right: -16px;
+                    top: 0;
+                    content: "|";
+                }
+
+    .copyright-text {
+        font-size: 14px;
+        color: #c4c4c4;
+        letter-spacing: 0.5px;
+        border-top: 1px solid #1a1a1a;
+        padding: 25px 0;
+        margin-top: 15px;
+    }
+
+        .copyright-text a,
+        .copyright-text i {
+            color: #f36100;
+        }
+</style>
+
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
@@ -24,7 +192,7 @@
                         </div>
 
                         <!-- Accordion -->
-                        <h5>FAQ</h5>
+                        <h5 style="color:white">FAQ</h5>
                         <div class="row g-6">
                             <div class="col-md">
                                 <small class="text-light fw-medium">Frequently Asked Question</small>
@@ -335,6 +503,84 @@
 
                         <!--/ Accordion -->
                     </div>
+                    <!-- Footer Section Begin -->
+                    <section class="footer-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="fs-about">
+                                        <div class="fa-logo">
+                                            <a href="#"><img src="/img/logo.png" alt="" style="width: 15rem; height: auto;"></a>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                            labore dolore magna aliqua endisse ultrices gravida lorem.
+                                        </p>
+                                        <div class="fa-social">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                            <a href="#"><i class="fa  fa-envelope-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                    <div class="fs-widget">
+                                        <h4>Useful links</h4>
+                                        <ul>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Classes</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                    <div class="fs-widget">
+                                        <h4>Support</h4>
+                                        <ul>
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">My account</a></li>
+                                            <li><a href="#">Subscribe</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="fs-widget">
+                                        <h4>Tips & Guides</h4>
+                                        <div class="fw-recent">
+                                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                                            <ul>
+                                                <li>3 min read</li>
+                                                <li>20 Comment</li>
+                                            </ul>
+                                        </div>
+                                        <div class="fw-recent">
+                                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                                            <ul>
+                                                <li>3 min read</li>
+                                                <li>20 Comment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <div class="copyright-text">
+                                        <p>
+                                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | GymMemberships Management System(GMS)
+                                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Footer Section End -->
                     <!-- / Content -->
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -361,63 +607,4 @@
     <!-- Page JS -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <style>
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Ensures the video stays in the background */
-        }
-
-        #bg-video {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-
-        .transparent-card {
-            background: rgba(0, 0, 0, 0.5); /* Transparent background */
-            color: white;
-            border: none;
-            position: relative;
-            z-index: 10;
-        }
-
-        img {
-            height: 600px;
-            width: 600px;
-            object-fit: cover;
-        }
-
-        /* Make the accordion background transparent */
-        .accordion-item {
-            background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity */
-            border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a transparent border */
-        }
-
-        .accordion-body {
-            color: #fff; /* white text */
-            font-weight: bold; /* optional, to make it stand out */
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* optional, to add a glow effect */
-        }
-
-        /* Make accordion header button background transparent */
-        .accordion-button {
-            background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity */
-            color: white; /* Text color */
-        }
-
-            /* Make accordion button when active transparent */
-            .accordion-button:not(.collapsed) {
-                background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity when active */
-                color: white; /* Text color */
-            }
-
-            /* Optional: You can also add hover effects */
-            .accordion-button:hover {
-                background-color: rgba(0, 0, 0, 0.3); /* Change on hover */
-            }
-    </style>
 </body>

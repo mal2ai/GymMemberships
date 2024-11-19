@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GymMemberships.styles.css" asp-append-version="true" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,18 +34,17 @@
     <script src="/assets/js/config.js"></script>
 
     <style>
-        /* Force navbar text color to white when it's transparent */
-        .navbar-light .navbar-nav .nav-link {
+        /* Set navbar text color to white for guests */
+        .bg-black .navbar-nav .nav-link {
             color: white !important;
         }
 
-            /* Change text color to gray on hover */
-            .navbar-light .navbar-nav .nav-link:hover {
+            /* Change text color to gray on hover for guests */
+            .bg-black .navbar-nav .nav-link:hover {
                 color: gray !important;
             }
 
-
-        /* Ensures the navbar has a transparent background when logged out */
+        /* Optional: Add a transparent background when logged out if needed */
         .bg-transparent {
             background-color: transparent !important;
         }
@@ -125,7 +124,7 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center @(!User.Identity.IsAuthenticated ? "bg-transparent navbar-light text-white" : "bg-navbar-theme")"
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center @(User.Identity.IsAuthenticated ? "bg-navbar-theme" : "bg-black text-white bg-transparent")"
                      id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
                         <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
@@ -155,13 +154,13 @@
                             <!-- Display Navigation Menu for Guests -->
                             <ul class="navbar-nav align-items-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                                    <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                                    <a class="nav-link text-white" asp-controller="Home" asp-action="AboutUs">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                                    <a class="nav-link text-white" asp-controller="Home" asp-action="FAQ">FAQ</a>
                                 </li>
                             </ul>
                         }
@@ -180,8 +179,7 @@
                     @RenderBody()
                     <!-- / Content -->
                     
-
-                    <div class="content-backdrop fade"></div>
+                    
                 </div>
                 <!-- Content wrapper -->
             </div>
